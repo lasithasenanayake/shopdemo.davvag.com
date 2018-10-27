@@ -1,0 +1,15 @@
+{
+    "apps":{
+        "mylunch":{
+            "version":"latest"
+        }
+    },
+    "webdock":{
+        "events":{
+            "onStartup":{
+                "admin" : "mylunch",
+                "default" : "mylunch"
+            }
+        }
+    }
+}
