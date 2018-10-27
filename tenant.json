@@ -32,11 +32,7 @@
         "events":{
             "onStartup":{
                 "admin" : "dock",
-<<<<<<< HEAD:sosscomponents/localhost/tenant.json
-                "default" : "davvag-cms-davvag"
-=======
                 "default" : "mylunch"
->>>>>>> 96ba604752ba25f2fb2f6a9e9a3a1698afb889be:sosscomponents/localhost/tenant.json
             }
         }
     }
