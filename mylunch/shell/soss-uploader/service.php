@@ -40,7 +40,7 @@ class UploaderService {
             
             if (!file_exists($folder))
                 mkdir($folder, 0777, true);
-
+            
             file_put_contents("$folder/$name", $this->getPostBody());
             $resObj = new stdClass();
             $resObj->sucess = true;

@@ -8,13 +8,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img class="slide-image" src="assets/img/slider/image1.png" alt="">
+                    <img class="slide-image" src="assets/mylunch/img/slider/image1.png" alt="">
                 </div>
                 <div class="item">
-                    <img class="slide-image" src="assets/img/slider/image2.png" alt="">
+                    <img class="slide-image" src="assets/mylunch/img/slider/image2.png" alt="">
                 </div>
                 <div class="item">
-                    <img class="slide-image" src="assets/img/slider/image3.png" alt="">
+                    <img class="slide-image" src="assets/mylunch/img/slider/image3.png" alt="">
                 </div>
             </div>
             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -28,7 +28,7 @@
 </div>
 
 <a href="#/cart">
-    <div class="fabButton showMobile" style="background-image: url('assets/img/grabit.png');">
+    <div class="fabButton showMobile" style="background-image: url('assets/mylunch/img/grabit.png');">
         <div v-if="itemCount > 0" style="left: 100%;top: 100%;position: absolute;margin-left: -25px;margin-top: -25px;background-color: red;width: 30px;height: 30px;border-radius: 20px;color: black;align-content: middle;text-align: center;">
             <label style="margin-top: 4px;">{{itemCount}}</label>
         </div>
@@ -38,9 +38,9 @@
     <div class="col-sm-4 col-lg-4 col-md-4" v-for="item in items">
         <div class="thumbnail" style="border-radius:2px;">
             <div class="form-group" style="text-align:center;">
-                <img v-if="item.inventory ? item.inventory.qty == 0 : true" src="assets/img/outofstock.png" alt="" style="position: absolute;left: 50%;top: 45px;width: 200px;margin-left:-100px;"/>
-                <img v-if="item.inventory ? item.inventory.qty == 0 : true" class="homeImage" v-bind:src="'components/soss-uploader/service/get/products/' + item.itemid" style="opacity: 0.5; filter: alpha(opacity=50);"  alt=""/>
-                <img v-if="item.inventory ? item.inventory.qty != 0 : false" class="homeImage" v-bind:src="'components/soss-uploader/service/get/products/' + item.itemid" alt=""/>
+                <img v-if="item.inventory ? item.inventory.qty == 0 : true" src="assets/mylunch/img/outofstock.png" alt="" style="position: absolute;left: 50%;top: 45px;width: 200px;margin-left:-100px;"/>
+                <img v-if="item.inventory ? item.inventory.qty == 0 : true" class="homeImage" v-bind:src="'components/mylunch/soss-uploader/service/get/products/' + item.itemid" style="opacity: 0.5; filter: alpha(opacity=50);"  alt=""/>
+                <img v-if="item.inventory ? item.inventory.qty != 0 : false" class="homeImage" v-bind:src="'components/mylunch/soss-uploader/service/get/products/' + item.itemid" alt=""/>
             </div>
             <div class="caption form-group">
                 <!-- <h4 class="pull-right">{{ item.uom }}.{{ item.price }}</h4>  -->
@@ -75,7 +75,7 @@
                 <hr>
                 <div id="myLunchMapHome" style="height:300px;">
                     <div style="left:50%;top:50%;position:absolute;margin-left:-77px;margin-top-27px;text-align:center;">
-                        <img src="assets/img/loading.gif" /><br/>
+                        <img src="assets/mylunch/img/loading.gif" /><br/>
                         <label>Loading Google Maps</label>
                     </div>
                 </div>

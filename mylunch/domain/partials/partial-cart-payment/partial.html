@@ -31,23 +31,23 @@
         <button class="btn btn-success pull-right" :disabled="isBusy" v-on:click="submit">Complete Payment <span class="glyphicon glyphicon-play"></button>
     </div>
     <div class="col-md-8 text-center" style="margin-top:50px;color:black;">
-    <!--a v-on:click="submit" style="cursor:pointer;"><div class="fabButton showMobile" style="background-image: url('assets/img/eatit.png');"></div></a-->
+    <!--a v-on:click="submit" style="cursor:pointer;"><div class="fabButton showMobile" style="background-image: url('assets/mylunch/img/eatit.png');"></div></a-->
 
         <div class="form-group col-md-4">
             <div class="thumbnail thumbnail-payoption radio">
-                <img src="assets/img/payment/cod.png">
+                <img src="assets/mylunch/img/payment/cod.png">
                 <label><input type="radio" name="optradio" value="cashondelivery" v-model="paymentmode" checked="checked">Cash On Delivery</label>
             </div>
         </div>
         <div class="form-group col-md-4">
             <div class="thumbnail thumbnail-payoption radio">
-                <img src="assets/img/payment/visa.png">
+                <img src="assets/mylunch/img/payment/visa.png">
                 <label><input type="radio" value="creditcard" v-model="paymentmode" name="optradio">Credit Card</label>
             </div>
         </div>
         <!--div class="form-group col-md-4">
             <div class="thumbnail thumbnail-payoption radio">
-                <img src="assets/img/payment/ez.png">
+                <img src="assets/mylunch/img/payment/ez.png">
                 <label><input type="radio" disabled name="optradio">Ez Cash</label>
             </div>
         </div-->

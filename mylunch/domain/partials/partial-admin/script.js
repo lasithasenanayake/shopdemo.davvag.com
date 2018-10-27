@@ -4,56 +4,56 @@ WEBDOCK.component().register(function(exports){
         items: [
             {
                 href : "#/admin-uom",
-                imgSrc:  "assets/img/admin/uom.png",
+                imgSrc:  "assets/mylunch/img/admin/uom.png",
                 name: "UOM",
                 description : "Manage the Unit of Meature"
 
             },
             {
                 href : "#/admin-allcategories",
-                imgSrc:  "assets/img/admin/categorymanage.png",
+                imgSrc:  "assets/mylunch/img/admin/categorymanage.png",
                 name: "Product Categories",
                 description : "Manage all the products categories"
 
             },
             {
                 href : "#/admin-allproducts",
-                imgSrc:  "assets/img/admin/prodmanage.png",
+                imgSrc:  "assets/mylunch/img/admin/prodmanage.png",
                 name: "Products",
                 description : "Manage all the products in the inventory"
 
             },
             {
                 href : "#/admin-allstores",
-                imgSrc:  "assets/img/admin/store.png",
+                imgSrc:  "assets/mylunch/img/admin/store.png",
                 name: "Stores",
                 description : "Manage Stores"
 
             },
             {
                 href : "#/admin-allriders",
-                imgSrc:  "assets/img/admin/rider.png",
+                imgSrc:  "assets/mylunch/img/admin/rider.png",
                 name: "Riders",
                 description : "Manage all the riders in the company"
 
             },
             {
                 href : "#/admin-grn",
-                imgSrc:  "assets/img/admin/grn.jpg",
+                imgSrc:  "assets/mylunch/img/admin/grn.jpg",
                 name: "GRN",
                 description : "Create/View GRN"
 
             },
             {
                 href : "#/admin-inventory",
-                imgSrc:  "assets/img/admin/inventory.png",
+                imgSrc:  "assets/mylunch/img/admin/inventory.png",
                 name: "Inventory",
                 description : "Manage all the products in the inventory"
 
             },
             {
                 href : "#/admin-orders",
-                imgSrc:  "assets/img/admin/order.png",
+                imgSrc:  "assets/mylunch/img/admin/order.png",
                 name: "Orders",
                 description : "Manage Orders"
 

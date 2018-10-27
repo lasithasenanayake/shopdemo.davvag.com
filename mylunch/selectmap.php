@@ -174,8 +174,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
             <div id="idBottomStrip">
                 <form onsubmit="return submitForm()" method="post">
                     <input type="hidden" name="latlng" id="idLatLng">
-                    <input id ="idButtonLocation" type="button" class="fabButton" style="margin-top: -150px;background-image:url(assets/img/location.png);" onclick="getCurrentLocation()"/>
-                    <button id ="idButtonProceed" class="fabButton" style="margin-top: -80px;background-image:url(assets/img/tick.png);"></button>
+                    <input id ="idButtonLocation" type="button" class="fabButton" style="margin-top: -150px;background-image:url(assets/mylunch/img/location.png);" onclick="getCurrentLocation()"/>
+                    <button id ="idButtonProceed" class="fabButton" style="margin-top: -80px;background-image:url(assets/mylunch/img/tick.png);"></button>
                 </form>
                 
             </div>

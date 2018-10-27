@@ -1,5 +1,29 @@
 {
     "apps":{
+        "dock":{
+            "version":"latest"
+        },
+        "productapp":{
+            "version":"latest"
+        },
+        "profileapp":{
+            "version":"latest"
+        },
+        "uom":{
+            "version":"latest"
+        },
+        "productcategories":{
+            "version":"latest"
+        },
+        "dock-settings":{
+            "version":"latest"
+        },
+        "davvag-cms-davvag":{
+            "version":"latest"
+        },
+        "davvag-cms-generalapps":{
+            "version":"latest"
+        },
         "mylunch":{
             "version":"latest"
         }
@@ -7,8 +31,12 @@
     "webdock":{
         "events":{
             "onStartup":{
-                "admin" : "mylunch",
+                "admin" : "dock",
+<<<<<<< HEAD:sosscomponents/localhost/tenant.json
+                "default" : "davvag-cms-davvag"
+=======
                 "default" : "mylunch"
+>>>>>>> 96ba604752ba25f2fb2f6a9e9a3a1698afb889be:sosscomponents/localhost/tenant.json
             }
         }
     }

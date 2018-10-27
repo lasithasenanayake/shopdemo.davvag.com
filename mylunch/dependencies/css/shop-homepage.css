@@ -451,7 +451,7 @@ input.deliveryAddress{
 }
 
 body {
-    background-image: url("./../../../../assets/img/splash.jpg");
+    background-image: url("./../../../../../assets/mylunch/img/splash.jpg");
     color: white;
     background-size:cover;
 }

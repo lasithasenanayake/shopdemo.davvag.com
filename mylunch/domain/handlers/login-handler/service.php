@@ -82,7 +82,7 @@ class LoginService {
 $body = <<<EOT
         <div style="width:500px;font-family:Georgia;overflow:auto;">
             <div style="background:#115FB2;">
-                <img src="https://mylunch.lk/assets/img/cart.png"/>
+                <img src="https://mylunch.lk/assets/mylunch/img/cart.png"/>
             </div>
             <div style="height:100px;clear: both;">
                 <h2>You have requested to reset the password. Please use the following link to reset the password</h2>

@@ -46,12 +46,14 @@ WEBDOCK.component().register(function(exports){
             
             if (routeData)
             if (routeData.cat){
-                promiseObj = services.product.services.allProducts({catid:routeData.cat, lat:config.location.lat, lng:config.location.lng});
+                promiseObj = services.product.transformers.allProducts({catid:routeData.cat});
+                //promiseObj = services.product.services.allProducts({catid:routeData.cat, lat:config.location.lat, lng:config.location.lng});
                 app.canShowSlider = false;
             }
 
             if (!promiseObj)
-                promiseObj = services.product.services.allProducts();
+                promiseObj = services.product.transformers.allProducts({catid:routeData.cat});
+                //promiseObj = services.product.services.allProducts();
 
             promiseObj.then(function(result){
                 bindData.items = result.result;

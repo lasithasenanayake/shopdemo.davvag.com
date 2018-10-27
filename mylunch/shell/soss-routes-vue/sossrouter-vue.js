@@ -1,11 +1,11 @@
 WEBDOCK.component().register(function(exports){
 
     var w = window;
-    var pInstance = w.WEBDOCK.getPlugin ("soss-routes");
+    var pInstance = exports.getShellComponent("soss-routes");
     
 
     var exports = {
-        inject: function (data, instance, cb){
+        inject: function (data, instance, routeParams, cb){
             if (!data)
                 return;
                 
@@ -24,18 +24,23 @@ WEBDOCK.component().register(function(exports){
                     return;
 
                 if (instance.onLoad)
-                    instance.onLoad(instance);
+                    instance.onLoad(instance);                
                 
                 vueData = instance.vue; 
-                
-                if (vueData.onBeforeRender)
-                    vueData.onBeforeRender();
-                
-                vueData.el = '#' + routeSettings.routes.renderDiv;
+                var app;
 
-                var app = new Vue(vueData);
+                if (!vueData.deferRendering){
+                    if (vueData.onBeforeRender)
+                        vueData.onBeforeRender();
+                    
+                    vueData.el = '#' + routeSettings.routes.renderDiv;
+
+                    app = new Vue(vueData);                    
+                }
+
                 if (vueData.onReady)
-                    vueData.onReady(app, renderDiv);
+                    vueData.onReady(app, renderDiv,routeParams);
+
                 cb (data);
             } catch (e){
                 console.log ("Error Occured While Loading...");

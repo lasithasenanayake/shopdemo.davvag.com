@@ -90,7 +90,7 @@ class CartService {
 $body = <<<EOT
         <div style="width:500px;font-family:Georgia;overflow:auto;">
             <div style="background:#115FB2;">
-                <img src="https://mylunch.lk/assets/img/cart.png"/>
+                <img src="https://mylunch.lk/assets/mylunch/img/cart.png"/>
             </div>
             <div style="height:100px;clear: both;">
                 <h2>Thank you for ordering your meal from Mylunch.lk. Your order will be dispatched shortly (Order Id : @@ORDERID@@)</h2>
